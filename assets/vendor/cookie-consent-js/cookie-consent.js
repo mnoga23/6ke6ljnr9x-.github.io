@@ -49,7 +49,6 @@ function CookieConsent(props) {
     renderModal()
 
     function renderModal() {
-
         const linkPrivacyPolicy = '<a href="' + _this.props.privacyPolicyUrl + '">' + _t.privacyPolicy + '</a>'
         if (_this.props.content[_this.lang] === undefined) {
             _this.lang = _this.props.defaultLang
@@ -58,7 +57,7 @@ function CookieConsent(props) {
         if (_this.props.blockAccess) {
             modalClass += " block-access"
         }
-        _this.modalContent = '<!-- cookie banner => https://github.com/shaack/cookie-consent-js -->' +
+        _this.modalContent =
             '<div class="' + modalClass + '">' +
             '<div class="modal-content-wrap ' + _this.props.position + '">' +
             '<div class="modal-content">' +
@@ -79,29 +78,6 @@ function CookieConsent(props) {
         if (getCookie(_this.props.cookieName) === undefined && _this.props.autoShowModal) {
             showDialog()
         }
-    }
-
-    function fetchContent(lang, callback) {
-        const request = new XMLHttpRequest()
-        request.overrideMimeType("application/json")
-        const url = _this.props.contentUrl + '/' + lang + '.json'
-        request.open('GET', url, true)
-        request.onreadystatechange = function () {
-            if (request.readyState === 4 && request.status === 200) {
-                if (request.status === 200) {
-                    callback(request.responseText)
-                } else {
-                    console.error(url, request.status)
-                }
-            }
-        }
-        request.onloadend = function() {
-            if (request.status === 404 && lang !== _this.props.defaultLang) {
-                console.warn("language " + lang + " not found trying defaultLang " + _this.props.defaultLang)
-                fetchContent(_this.props.defaultLang, callback)
-            }
-        }
-        request.send(null)
     }
 
     function setCookie(name, value, days) {
