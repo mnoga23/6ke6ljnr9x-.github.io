@@ -22,6 +22,7 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/cookie-consent-js/cookie-consent.css" rel="stylesheet"/>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -96,7 +97,7 @@
           </div>
         </div>
         <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
-          <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
+          <div class="item web col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="work-single.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Euphorbia</h3>
@@ -105,7 +106,7 @@
               <img class="img-fluid" src="assets/img/euphorbia.jpeg">
             </a>
           </div>
-          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+          <div class="item photography col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="work-single.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Lythrum</h3>
@@ -114,7 +115,7 @@
               <img class="img-fluid" src="assets/img/Lythrum.jpg">
             </a>
           </div>
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+          <div class="item branding col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="work-single.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Cynara Cardunculus</h3>
@@ -123,7 +124,7 @@
               <img class="img-fluid" src="assets/img/cynara-cardunculus.jpg">
             </a>
           </div>
-          <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
+          <div class="item design col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="work-single.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Adenophora Khasiana</h3>
@@ -132,7 +133,7 @@
               <img class="img-fluid" src="assets/img/adenophora-khasiana.jpg">
             </a>
           </div>
-          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+          <div class="item photography col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="work-single.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Echinops Ritro</h3>
@@ -141,7 +142,7 @@
               <img class="img-fluid" src="assets/img/echinops-ritro.jpg">
             </a>
           </div>
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+          <div class="item branding col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="work-single.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Veronica Longifolia</h3>
@@ -150,7 +151,7 @@
               <img class="img-fluid" src="assets/img/veronica-longifolia.jpg">
             </a>
           </div>
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+          <div class="item branding col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="work-single.html" class="item-wrap fancybox">
               <div class="work-info">
                 <h3>Osteospermum</h3>
@@ -159,22 +160,31 @@
               <img class="img-fluid" src="assets/img/osteospermum.jpeg">
             </a>
           </div>
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+          <div class="item branding col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="work-single.html" class="item-wrap fancybox">
               <div class="work-info">
-                <h3>Canna Lily</h3>
-                <span>Cannaceae</span>
+                <h3>Cannaceae</h3>
+                <span>Canna Lily</span>
               </div>
               <img class="img-fluid" src="assets/img/canna-lily.jpg">
             </a>
           </div>
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+          <div class="item branding col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="work-single.html" class="item-wrap fancybox">
               <div class="work-info">
-                <h3>Coneflower Bravado</h3>
-                <span>Echinacea Bravado</span>
+                <h3>Echinacea Bravado</h3>
+                <span>Coneflower Bravado</span>
               </div>
               <img class="img-fluid" src="assets/img/echinacea-bravado.jpg">
+            </a>
+          </div>
+          <div class="item branding col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="work-single.html" class="item-wrap fancybox">
+              <div class="work-info">
+                <h3>Digitalis Purpurea</h3>
+                <span>Foxglove Elsie Kelsey</span>
+              </div>
+              <img class="img-fluid" src="assets/img/foxglove_elsie_kelsey/1.jpg">
             </a>
           </div>
         </div>
@@ -357,6 +367,13 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script src="assets/vendor/cookie-consent-js/cookie-consent.js"></script>
+  <script>
+    const cookieConsent = new CookieConsent({
+      contentUrl: "./cookie-consent-content", // location of the language files
+      privacyPolicyUrl: "/privacy-policy.html"
+    })
+  </script>
 </body>
 
 </html>
