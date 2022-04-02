@@ -22,7 +22,14 @@
 }
 
 .cookie-consent-modal .modal-content-wrap.top {
-    top: 5%;
+    top: 10%;
+}
+
+.cookie-consent-modal .modal-content-wrap.centre {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    min-width: 320px;
 }
 
 .cookie-consent-modal .modal-content-wrap .modal-content {
