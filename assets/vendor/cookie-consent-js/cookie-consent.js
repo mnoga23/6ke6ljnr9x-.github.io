@@ -22,7 +22,7 @@ function CookieConsent(props) {
         buttonSecondaryClass: "btn btn-secondary", // the "accept necessary" buttons class, only used for styling
         autoShowModal: true, // disable autoShowModal on the privacy policy page, to make that page readable
         blockAccess: false, // set "true" to block the access to the website before choosing a cookie configuration
-        position: "right", // position ("left" or "right"), if blockAccess is false
+        position: "centre", // position ("left" or "right"), if blockAccess is false
         postSelectionCallback: undefined, // callback, after the user has made a selection
         lang: navigator.language, // the language, in which the dialog is shown
         defaultLang: "en", // default language, if the `lang` is not available as translation in `cookie-consent-content`
