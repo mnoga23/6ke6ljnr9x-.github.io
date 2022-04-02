@@ -21,11 +21,8 @@
     left: 0;
 }
 
-.cookie-consent-modal .modal-content-wrap.centre {
-    left: 48%;
-    top: 25%;
-    transform: translate(-50%, 0);
-    min-width: 280px;
+.cookie-consent-modal .modal-content-wrap.top {
+    top: 5%;
 }
 
 .cookie-consent-modal .modal-content-wrap .modal-content {
