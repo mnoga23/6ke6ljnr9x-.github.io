@@ -9,7 +9,8 @@
 
 .cookie-consent-modal .modal-content-wrap {
     position: fixed;
-    margin: 0% 5%;
+    transform: translate(-50%, 0%);
+    left: 50%;
 }
 
 .cookie-consent-modal .modal-content-wrap.right {
@@ -26,6 +27,8 @@
 
 .cookie-consent-modal .modal-content-wrap.centre {
     top: 5%;
+    width: fit-content;
+    padding: 5%;
 }
 
 .cookie-consent-modal .modal-content-wrap .modal-content {
